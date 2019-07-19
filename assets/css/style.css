@@ -1,0 +1,35 @@
+body {
+    background-image: url(../images/galaxy.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    .score {
+        width: 212px;
+        height: 200px;
+        background-color: red;
+        margin: 218px -351px 15px 440px;
+        float: left;
+    }
+
+    #allrocks {
+        width: 640px;
+        height: 200px;
+        background: aqua;
+        position: relative;
+        margin: 485px 0px 0px 401px;
+    }
+
+    .whowon{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 11px 51px 55px 1200px;
+    position: relative;
+    }
+
+    h1{
+
+        color: yellow;
+    margin: 0px 0 0 525px;
+    }
