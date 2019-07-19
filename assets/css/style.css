@@ -1,35 +1,79 @@
 body {
-    background-image: url(../images/galaxy.jpeg);
+    background-image: url(../images/space.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     
     }
+
+    .instuctions{
+        width: 250px;
+        height: 479px;
+        background-color: #000066;
+        margin: 132px 0px 27px 115px;
+        position: absolute;
+    }
     .score {
-        width: 212px;
-        height: 200px;
-        background-color: red;
-        margin: 218px -351px 15px 440px;
+        width: 250px;
+        height: 280px;
+        background-color: #000066;
+        margin: 169px -430px 0 468px;
         float: left;
     }
 
     #allrocks {
-        width: 640px;
+        width: 650px;
         height: 200px;
-        background: aqua;
+        background: #000066;
         position: relative;
-        margin: 485px 0px 0px 401px;
+        margin: 488px 0px 0px 420px;
     }
+    .rocks{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .size{
+        width: 150px;
+        height: 150px;
+        
+    }
+    #rock1{
+        margin: 25px 0 0 10px;
+    }
+    #rock2{
+        margin: 25px 0 0 60px;
+
+    }
+    #rock3{
+        margin: 25px 0 0 60px;
+
+    }
+    #rock4{
+        margin: 25px 0 0 60px;
+    }
+    
 
     .whowon{
-    width: 200px;
-    height: 200px;
-    background-color: lightgreen;
-    margin: 11px 51px 55px 1200px;
-    position: relative;
+        width: 250px;
+        height: 200px;
+        background-color: #000066;
+        margin: 137px 0 0px 1120px;
+        position: absolute;
+    }
+
+    .wholost{
+        width: 250px;
+        height: 200px;
+        background-color: #000066;
+        margin: 400px 0 0px 1120px;
+        position: absolute;
     }
 
     h1{
 
-        color: yellow;
-    margin: 0px 0 0 525px;
-    }
+color: 	 #ccccff;
+font-size: 70px;
+font-family: 'Squada One', cursive;
+margin: 0px 0px -50px 470px;
+
+}
