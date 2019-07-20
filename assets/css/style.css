@@ -7,11 +7,23 @@ body {
 
     .instuctions{
         width: 250px;
-        height: 479px;
+        height: 420px;
         background-color: #000066;
-        margin: 132px 0px 27px 115px;
+        margin: 134px 0px 27px 115px;
         position: absolute;
-        border-radius: 52px;
+        border-radius: 15px;
+        font-family: 'Squada One', cursive;
+        font-size: 30px;
+        color: #ccccff;
+        text-align: center;
+
+    }
+
+    #inst{
+        width: 200px;
+        height: 215px;
+        margin: 119px 0 0 20px;
+        font-family: 'Squada One', cursive;
     }
     .score {
         width: 250px;
@@ -21,7 +33,62 @@ body {
         float: left;
         border-radius: 52px;
     }
-
+    #compc{
+        width: 100px;
+        height: 100px;
+        margin: 50px 0 0 80px;
+        text-align: center;
+        font-size: 100px;
+        color: #ccccff;
+    }
+    #compchoice{
+        text-align: center;
+        font-size: 30px;
+        color: #ccccff;
+        font-family: 'Squada One', cursive;
+    }
+    #userc{
+        width: 100px;
+        height: 100px;
+        margin: 50px 0 0 80px;
+        text-align: center;
+        font-size: 100px;
+        color: #ccccff;
+    }
+    #userchoice{
+        text-align: center;
+        font-size: 30px;
+        color: #ccccff;
+        font-family: 'Squada One', cursive;
+    }
+    #w{
+        width: 100px;
+        height: 100px;
+        margin: 25px 0 0 80px;
+        text-align: center;
+        font-size: 100px;
+        color: #ccccff;
+    }
+    #winner{
+        text-align: center;
+        font-size: 30px;
+        color: #ccccff;
+        font-family: 'Squada One', cursive;
+    }
+    #l{
+        width: 100px;
+        height: 100px;
+        margin: 25px 0 0 80px;
+        text-align: center;
+        font-size: 100px;
+        color: #ccccff;
+    }
+    #loser{
+        text-align: center;
+        font-size: 30px;
+        color: #ccccff;
+        font-family: 'Squada One', cursive;
+    }
     #allrocks {
         width: 650px;
         height: 200px;
@@ -81,5 +148,6 @@ color: 	 #ccccff;
 font-size: 70px;
 font-family: 'Squada One', cursive;
 margin: 62px 0px -100px 470px;
+
 
 }

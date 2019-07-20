@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Space Rock Collector</title>
 
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <h1>Space Rock Collector</h1>
 
-    <p class="instuctions"></p>
+    <p class="instuctions">
+        Welcome to the Space Rock Collector! you are given four space rocks each with a random value. Try to add up the
+        value of your space rocks and match the number the Milky Way has given you. If you match that number you win! if
+        you go over it you lose! Best of luck!
+    </p>
 
-    <div id="winner" class="whowon"></div>
-    <div id="loser" class="wholost"></div>
+    <div id="winner" class="whowon">
+        Wins
+        <p id="w">0</p>
+    </div>
+    <div id="loser" class="wholost">
+        Loses
+        <p id="l">0</p>
+    </div>
 
-    <div id="compchoice" class="score" ></div>
+    <div id="compchoice" class="score">
+        Milky Way
+       <p id="compc">0</p> 
+    </div>
     <div id="userchoice" class="score">
+        Your Rocks
+      <p id="userc">0</p>  
     </div>
 
     <div id="allrocks">
         <div id="rock1" class="rocks">
             <img src="../Unit-4-game/assets/images/meteor1.jpg" alt="meteor1" class="size">
         </div>
-        <div id="rock2" class="rocks"> 
+        <div id="rock2" class="rocks">
             <img src="../Unit-4-game/assets/images/meteor2.jpg" alt="meteor2" class="size">
         </div>
         <div id="rock3" class="rocks">
@@ -36,8 +53,9 @@
             <img src="../Unit-4-game/assets/images/meteor4.jpg" alt="meteor4" class="size">
         </div>
     </div>
-    
-    
-    
+
+
+
 </body>
+
 </html>
