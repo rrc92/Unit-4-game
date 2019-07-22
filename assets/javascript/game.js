@@ -89,12 +89,13 @@ $(document).ready(function () {
             $("#myrocks").html(myrocksscore);
             $("#wins").html(wins);
             resetscores("Good Job, You Win!");
-        } 
-        else if (myrocksscore > compchoice) {
-            numofloses++;
-            $("#myrocks").html(myrocksscore);
-            $("#loses").html(numofloses);
-            resetscores("You lose, try again");
+
+        }else if (myrocksscore >= compchoice) {
+           numofloses++;
+           $("#myrocks").html(myrocksscore);
+           $("#loses").html(numofloses);
+           resetscores("You lose, try again");
+       
         }
     });
 
