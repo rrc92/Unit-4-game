@@ -1,69 +1,102 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    var c;
+    function comppickrandomnum(arr) {
 
-    function generaterandomnum(){
-      c = Math.floor(Math.random()*100);
+        var x = arr[Math.floor(Math.random() * arr.length)];
+        compchoice = x;
+        $("#compc").html(compchoice);
+    } 
+
+    function randomrock(arr) {
+        for (var y = 0; y < 4; y++) {
+            var a = arr[Math.floor(Math.random() * arr.length)];
+            rocksvaluenum.push(a);
+        }
+    } 
+
+    function rocksnum(arr) {
+        for (i = 0; i < arr.length; i++) {
+            $(".rocks" + (i)).attr("data-type", arr[i]);
+        }
+        r1 = arr[0];
+        r2 = arr[1];
+        r3 = arr[2];
+        r4 = arr[3];
+    } 
+
+    var compc = [];
+
+    for (var i = 25; i < 75; i++) {
+        compc.push(i);
     }
 
-    var win = 0;
-    var a = $('#w');
-    a.text(win);
+    var crystals = [];
 
-    var lose = 0;
-    var b = $('#l');
-    b.text(lose);
-    
-    var comc = 0;
-    var c = $('#compc');
-    c.text(comc);
-    
+    for (var r = 1; r < 25; r++) {
+        crystals.push(r);
+    }
 
-    var usec = 0;
-    var d = $('#userc');
-    d.text(usec);
+    var compchoice;
+    var rocksvaluenum = [];
 
-    function checkNum(n){
-        if (c == n){
-          $('#w').text('you won');
-        }else {
-          $('#l').text('you lost');
+    var r1;
+    var r2;
+    var r3;
+    var r4;
+
+    var myrocksscore = 0;
+
+    var wins = 0;
+    var numofloses = 0;
+
+    function resetscores(x) {
+        rocksvaluenum = [];
+        comppickrandomnum(compc);
+        randomrock(crystals);
+        rocksnum(rocksvaluenum);
+        myrocksscore = 0;
+        $("#myrocks").html(myrocksscore);
+        alert(x);
+    } 
+
+    comppickrandomnum(compc); 
+    randomrock(crystals); 
+    rocksnum(rocksvaluenum);
+
+    $("#rock1").on("click", function () {
+        myrocksscore += r1;
+        $("#myrocks").html(myrocksscore);
+    });
+
+    $("#rock2").on("click", function () {
+        myrocksscore += r2;
+        $("#myrocks").html(myrocksscore);
+    });
+
+    $("#rock3").on("click", function () {
+        myrocksscore += r3;
+        $("#myrocks").html(myrocksscore);
+    });
+
+    $("#rock4").on("click", function () {
+        myrocksscore += r4;
+        $("#myrocks").html(myrocksscore);
+    });
+
+    $("img").on("click", function () {
+        if (myrocksscore == compchoice) {
+            wins++;
+            $("#myrocks").html(myrocksscore);
+            $("#wins").html(wins);
+            resetscores("Good Job, You Win!");
+        } 
+        else if (myrocksscore > compchoice) {
+            numofloses++;
+            $("#myrocks").html(myrocksscore);
+            $("#loses").html(numofloses);
+            resetscores("You lose, try again");
         }
-        $('#compc').text(c);
-      }
-    
-    function updateusecwithnum(){
-		d.text(usec);
-			
-	}
-    $('#rock1').on('click', function(){
-		// usec++;
-        updateusecwithnum();
-        generaterandomnum();
-      checkNum(1);
     });
-    $('#rock2').on('click', function(){
-		// usec++;
-        updateusecwithnum();
-        generaterandomnum();
-      checkNum(2);
-    });
-    $('#rock3').on('click', function(){
-		// usec++;
-        updateusecwithnum();
-        generaterandomnum();
-      checkNum(3);
-    });
-    $('#rock4').on('click', function(){
-		// usec++;
-        updateusecwithnum();
-        generaterandomnum();
-      checkNum(4);
-    });
-    
-   
-   
-			
-	
-    
+
+
 });
