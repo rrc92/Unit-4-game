@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 //random number to generate in computers choice side "Milky Way" 
     function comppickrandomnum(arr) {
 
@@ -87,7 +88,6 @@ $(document).ready(function () {
 //conditional statements
     $(document).on("click", function () {
         if (myrocksscore == compchoice) {
-            debugger;
             wins++;
             $("#myrocks").html(myrocksscore);
             $("#wins").html(wins);
